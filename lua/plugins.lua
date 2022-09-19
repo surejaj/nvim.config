@@ -24,7 +24,19 @@ return require('packer').startup(function(use)
      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
 
-  use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
+  use 'onsails/lspkind-nvim' -- vscode-like pictograms
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/nvim-cmp'
+
+  use 'dcampos/nvim-snippy'
+  use 'dcampos/cmp-snippy'
+
+  use {
+    'williamboman/mason.nvim', -- Simple to use language server installer
+    'williamboman/mason-lspconfig.nvim',
+    'neovim/nvim-lspconfig', -- Configurations for Nvim LSP
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
