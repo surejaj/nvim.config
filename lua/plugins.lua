@@ -38,6 +38,13 @@ return require('packer').startup(function(use)
   }
 
   use {
+    'nvim-telescope/telescope.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim',
+    }
+  }
+
+  use {
     'williamboman/mason.nvim', -- Simple to use language server installer
     'williamboman/mason-lspconfig.nvim',
     'neovim/nvim-lspconfig', -- Configurations for Nvim LSP

@@ -1,6 +1,11 @@
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
 
+--Remap space as leader key
+keymap.set("", "<Space>", "<Nop>", opts)
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
 -- Do not yank with x
 keymap.set('n', 'x', '"_x')
 
@@ -23,3 +28,6 @@ keymap.set('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>',                opts)
 keymap.set('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>',          opts)
 keymap.set('n', '<C-k>', '<cmd>lua vim.lsp.buf.signature_help()<CR>',   opts)
 
+--Telescope keymaps
+keymap.set("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
+keymap.set("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
