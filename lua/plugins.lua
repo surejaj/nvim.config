@@ -44,6 +44,8 @@ return require('packer').startup(function(use)
     }
   }
 
+  use 'lukas-reineke/indent-blankline.nvim'
+
   use {
     'williamboman/mason.nvim', -- Simple to use language server installer
     'williamboman/mason-lspconfig.nvim',
