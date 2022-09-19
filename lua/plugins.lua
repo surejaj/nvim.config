@@ -33,6 +33,11 @@ return require('packer').startup(function(use)
   use 'dcampos/cmp-snippy'
 
   use {
+    'nvim-treesitter/nvim-treesitter',
+    run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+  }
+
+  use {
     'williamboman/mason.nvim', -- Simple to use language server installer
     'williamboman/mason-lspconfig.nvim',
     'neovim/nvim-lspconfig', -- Configurations for Nvim LSP
