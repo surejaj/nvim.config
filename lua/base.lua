@@ -4,9 +4,10 @@ vim.scriptencoding='utf-8'
 vim.opt.encoding = 'utf-8'
 vim.opt.fileencoding = 'utf-8'
 
-vim.wo.number = true
 
 vim.opt.title = true
+vim.opt.number = true
+vim.opt.relativenumber = true
 vim.opt.autoindent = true
 vim.opt.hlsearch = true
 vim.opt.backup = false
@@ -33,3 +34,6 @@ vim.api.nvim_create_autocmd("InsertLeave", {
   pattern = '*',
   command = 'set nopaste'
 })
+
+vim.opt.termguicolors = true
+vim.cmd[[colorscheme nightfly]]

@@ -13,11 +13,7 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-
-  use {
-    'svrana/neosolarized.nvim',
-     requires = { 'tjdevries/colorbuddy.nvim' }
-  }
+  use 'bluz71/vim-nightfly-colors'
 
   use {
     'nvim-lualine/lualine.nvim',
