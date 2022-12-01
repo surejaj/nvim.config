@@ -37,3 +37,5 @@ vim.api.nvim_create_autocmd("InsertLeave", {
 
 vim.opt.termguicolors = true
 vim.cmd[[colorscheme nightfly]]
+
+vim.opt.colorcolumn = "80"
