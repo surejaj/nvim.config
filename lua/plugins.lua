@@ -13,7 +13,6 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-  use 'bluz71/vim-nightfly-colors'
 
   use {
     'nvim-lualine/lualine.nvim',
@@ -47,6 +46,8 @@ return require('packer').startup(function(use)
     'williamboman/mason-lspconfig.nvim',
     'neovim/nvim-lspconfig', -- Configurations for Nvim LSP
   }
+
+  use 'roxma/vim-tmux-clipboard'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
