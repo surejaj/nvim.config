@@ -18,6 +18,10 @@ keymap.set('n', '<C-a>', 'gg<S-v>G')
 
 -- New tab
 keymap.set('n', 'te', ':tabedit<Return>',       opts)
+keymap.set('n', 'tp', ':tabnext<Return>',       opts)
+keymap.set('n', 'tn', ':tabprevious<Return>',   opts)
+
+-- window split
 keymap.set('n', 'ss', ':split<Return><C-w>w',   opts)
 keymap.set('n', 'sv', ':vsplit<Return><C-w>w',  opts)
 
