@@ -36,6 +36,6 @@ vim.api.nvim_create_autocmd("InsertLeave", {
 })
 
 vim.opt.termguicolors = true
-vim.cmd[[colorscheme habamax]]
+vim.cmd[[colorscheme gruvbox]]
 
 vim.opt.colorcolumn = "80"

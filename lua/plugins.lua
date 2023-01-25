@@ -49,6 +49,10 @@ return require('packer').startup(function(use)
 
   use 'roxma/vim-tmux-clipboard'
   use 'stevearc/aerial.nvim'
+  use 'morhetz/gruvbox'
+  use 'vv9k/bogster'
+
+  use 'sbdchd/neoformat'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
