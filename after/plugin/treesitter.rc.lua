@@ -6,7 +6,8 @@ ts.setup {
     "c",
     "lua",
     "python",
-    "verilog"
+    "verilog",
+    "devicetree",
   },
 
   sync_install = false,

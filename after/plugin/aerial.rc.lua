@@ -17,6 +17,7 @@ require('aerial').setup({
     max_height = 0.9,
     height = nil,
     min_height = { 8, 0.1 },
+    min_width = 0.3,
   },
 
 

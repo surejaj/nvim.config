@@ -20,9 +20,10 @@ return require('packer').startup(function(use)
   }
 
   use 'onsails/lspkind-nvim' -- vscode-like pictograms
-  use 'hrsh7th/cmp-buffer'
-  use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-nvim-lua'
+  use 'hrsh7th/cmp-nvim-lsp'
 
   use 'dcampos/nvim-snippy'
   use 'dcampos/cmp-snippy'
@@ -39,7 +40,7 @@ return require('packer').startup(function(use)
     }
   }
 
-  use 'lukas-reineke/indent-blankline.nvim'
+  -- use 'lukas-reineke/indent-blankline.nvim'
 
   use {
     'williamboman/mason.nvim', -- Simple to use language server installer
@@ -52,6 +53,7 @@ return require('packer').startup(function(use)
   use 'morhetz/gruvbox'
   use 'vv9k/bogster'
 
+  -- Formatting using clang-format.
   use 'sbdchd/neoformat'
 
   -- Comment plugin
